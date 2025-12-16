@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="TOMICA" content="토미카의 시작부터 사이즈, 디테일, 라인업, 자부심, 연령층, 글로벌시장, 에디션까지 토마카에 대한 정보들을 설명하는 웹사이트입니다.">
+	<meta property="og:image" content="htts: /d0826.github.io/dimidifinal/thumbnail.png" />
+	<title>ABOUTTOMICA</title>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Goldman:wght@700&display=swap');
+			h1 {color:#EB1C24;z-index: 2; position: absolute; top: 29.5%; left: 50%; transform: translate(-50%, -50%); font-size: 2.5rem;}
+			body {text-align: center; text-align: center; margin: 0; padding: 0; font-family: "Goldman", sans-serif; font-weight: 700; font-style: normal;scroll-behavior: smooth; background-color: #0A0A0A;}
+			p { color: #BEBEBC; font-size: 1.4rem; margin: 10px 0; line-height: 1.4;}
+			section {background-color: #0A0A0A; position: static; padding: 50px 0;}
+    		header img {display: block;}
+        	h2 {color: #EB1C24; font-size: 7rem;  margin: 0;}
+        	header a:hover img {transform: scale(1.1) !important; animation-play-state: paused; z-index: 10;}
+
+		.goldman-bold {font-family: "Goldman", sans-serif;
+						  font-weight: 700;
+						  font-style: normal;}
+		.artboard{ width: 900px; margin: 0 auto; position: relative; text-align: center;}
+		.secart{border: 8px dashed red; width: 1000px; margin: 600px auto ; position: relative; text-align: center; }
+		.back{size: cover; width: 100%; position: relative; margin: 0; z-index: 1}
+		.mainlogo{position: absolute; width: 400px; height: auto; left: 50%; top: 53%; transform: translate(-50%, -50%); z-index: 2 }
+		.car1{position: absolute; width: 190px; height: auto; left: 65%; top: 16%; z-index: 3; animation-name: car-rotate-shake; animation-duration: 0.5s; 
+			animation-timing-function: ease-in-out; animation-iteration-count: infinite; 
+			transform-origin: center center; }
+		.car2{position: absolute; width: 190px; height: auto; left: 15%; top: 45%; z-index: 3 }
+		.car3{position: absolute; width: 190px; height: auto; left: 10%; top: 80%; z-index: 3 }
+		.car4{position: absolute; width: 190px; height: auto; left: 25%; top: 62%; z-index: 3 }
+		.car5{position: absolute; width: 190px; height: auto; left: 82%; top: 47%; z-index: 3 }
+		.car6{position: absolute; width: 190px; height: auto; left: 80%; top: 83%; z-index: 3 }
+		.car7{position: absolute; width: 190px; height: auto; left: 58%; top: 73%; z-index: 3 }
+		.car8{position: absolute; width: 190px; height: auto; left: 5%; top: 25%; z-index: 3 }
+			@keyframes car-rotate-shake {0% {transform: rotateZ(0deg); }
+		    25% {transform: rotateZ(-1deg); }
+		    50% {transform: rotateZ(0deg); }
+		    75% {transform: rotateZ(1deg); }
+		    100% {transform: rotateZ(0deg); }}
+		    @keyframes slide-in-car { 0% {transform: translateX(-1500px); } 100% {transform: translateX(0);}}
+		 .size{left: 10%; top: 34%;}
+		 .agerange{left: 17%; top: 55%;}
+		 .detail{left: 29%; top: 72%;} 
+		 .lineup{left: 13.5%; top: 90.5%;}
+		 .pride{left: 62.5%; top: 84%;}
+		 .year{left: 69.5%; top: 27%;}
+		 .global{left: 85.5%; top: 57%;} 
+		 .adition{left: 83.5%; top: 94%;}
+		 .p-header-style{color:#EB1C24;z-index: 2; position: absolute; font-size: 1.3rem}
+  .car1, .car2, .car3, .car4, .car5, .car6, .car7, .car8, .slider-container{animation-name: car-rotate-shake; animation-duration: 0.5s; animation-timing-function: ease-in-out;  animation-iteration-count: infinite; transform-origin: center center; cursor: pointer; }
+		
+		.fixed-nav {position: fixed; top: 0; left: 0; width: 100%; height: 60px; background-color: rgba(255, 255, 255, 0.1); backdrop-filter: blur(5px); 
+    		z-index: 1000; display: flex; justify-content: space-between; align-items: center; padding: 0 40px; box-sizing: border-box; }
+  		.nav-logo {width: 60px; height: auto; cursor: pointer;}
+		.nav-menu span {color: #EB1C24; margin-left: 10px; cursor: pointer; font-size: 1.7rem;}
+  
+	  .quote {border: 2px solid white; border-radius: 50px; display: inline-block; padding: 10px 25px; color: white; font-size: 1.5rem; margin: 40px auto; margin-top: 300px;}
+	  .quote1 {display: inline-block; padding: 10px 25px; background-color:#EB1C24 ; font-size: 1.5rem; margin: 40px auto; margin-top: 300px; color: white;}
+	  .white-text{color: white;}
+
+	  .slider-container { width: 500px; height: 300px; margin: auto; position: relative; overflow: hidden; display: flex; align-items: center; justify-content: space-between; cursor: grab; z-index: 5;}
+  		.slide-wrapper {display: flex; position: absolute; left: 0; height: 100%; }
+		.slide-image {width: 500px; height: 300px; object-fit: contain; flex-shrink: 0;display: block; }
+		.centerimage { display: block; margin-left: auto; margin-right: auto;}
+
+	.main-footer {background-color: #EB1C24; width: 100%; padding: 20px 0; text-align: center; box-sizing: border-box;}
+	.footer-text {color: #ffffff; font-size: 0.8rem; margin: 5px 0 10px 0; line-height: 1.2;}
+	.footer-design {color: #ffffff; font-size: 0.7rem; margin-top: 15px;}
+	.footer-divider {border: none; border-top: 5px solid rgba(255, 255, 255, 0.4); width: 80%; margin: 5px auto;}
+
+	.fixed-nav .nav-menu a {text-decoration: none; display: inline-block;}
+	.fixed-nav .nav-menu a span {color: #EB1C24;}
+	.w100{width: 100%;}
+	.p100{padding-top: 100px;}
+	.m100{margin-top: 100px;}
+	.m50{margin-top: 50px;}
+	.m10{margin-top: 10px;}
+	.p300{padding-top: 300px;}
+	.bf{background: url(./img/future2.png); background-attachment: fixed; width: 100%; height: 300px; margin-top: 200px; border-radius: 50px;}
+	.glow{filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.7)) drop-shadow(0 0 20px rgba(255, 255, 255, 0.4));}
+	.glow1{filter: drop-shadow(0 0 10px #EB1C24) drop-shadow(0 0 20px #EB1C24);}
+	.shake{animation-name: car-rotate-shake; animation-duration: 0.5s; animation-timing-function: ease-in-out;  animation-iteration-count: infinite; transform-origin: center center;}
+	.shake1{animation-name: car-rotate-shake; animation-duration: 2s; animation-timing-function: ease-in-out;  animation-iteration-count: infinite; transform-origin: center center;}
+	.stwarn{position: absolute; width: 50px; right:70px; top: 1600px}
+	.sttruck{position: absolute; width: 200px; left:0px; top: 1750px}
+	.stcorn{position: absolute; width: 50px; left:120px; top: 2200px}
+	.stmotor{position: absolute; width: 100px; right:30px; top: 2500px}
+	.stpork{position: absolute; width: 150px; right:0px; top: 2000px}
+	.stcorn2{position: absolute; width: 50px; right:0px; top: 2700px}
+	.stguide{position: absolute; width: 70px; right:30px; top: 3100px}
+	.stam{position: absolute; width: 120px; left:0; top: 2900px}
+
+	.section-car {transform: translateX(-1500px); transition: transform 1s cubic-bezier(0.25, 0.46, 0.45, 0.94); display: block; margin-left: auto; margin-right: auto;}
+	.section-car.animate-in {transform: translateX(0);}
+		
+	
+	.car1, .car2, .car3, .car4, .car5, .car6, .car7, .car8 {animation-play-state: running; 
+        transition: all 0.3s ease-in-out; }
+   .image-overlay-wrapper {position: relative; width: 100%; max-width: 900px; margin: 20px auto; overflow: hidden;cursor: pointer;}
+	.overlay-content {position: absolute;top: 0;left: 0;width: 100%;height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); backdrop-filter: blur(5px); display: flex; 
+    justify-content: center; align-items: center; opacity: 0; transition: opacity 0.3s ease-in-out; }
+	.overlay-text {color: #BEBEBC !important; font-size: 1.5rem;padding: 0 40px;margin: 0;
+    text-align: center;}
+	.image-overlay-wrapper:hover .overlay-content {opacity: 1; }
+	.gif{background: url(https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbTgzZXExdHk1Y2YzcDNmYW5zaWRobGw4ejhzMWJpanNrNXk1cGFzeiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/Z7WlNH66dI1x2LiwKc/giphy.gif); background-attachment: fixed; background-size: cover; height: 200px;border-radius: 30px; }
+	
+	.dio6{position: absolute; width: 150px; right:10px; top: 160px}
+	</style>
+</head>
+<body>
+	<nav class="fixed-nav">
+		<a href="#section-main">
+	    	<img class="nav-logo" src="./img/tomicalogo.png" alt="TOMICA Logo">
+	    </a>
+    	<div class="nav-menu">
+
+    	<a href="#section-1970">
+	      	<span>➊</span>
+	      </a>
+	    <a href="#section-size">
+	      	<span>➋</span>
+	      </a>
+	    <a href="#section-detail">
+	      	<span>➌</span>
+	      </a>
+	    <a href="#section-lineup">
+	      	<span>➍</span>
+	      </a>
+	    <a href="#section-pride">
+	      	<span>➎</span>
+	      </a>
+	    <a href="#section-agerange">
+	      	<span>➏</span>
+	      </a>
+	    <a href="#section-global">
+	      	<span>➐</span>
+	      </a>
+	     <a href="#section-adition">
+	      	<span>➑</span>
+	      </a>
+     	 </div>
+  	</nav>
+	<header id="section-main">
+		<h1 class="goldman-bold">ABOUT</h1>
+		<img class="back" src="./img/back.png">
+		<img class="mainlogo" src="./img/tomicalogo.png">
+		
+		<a href="#section-1970">
+			<img class="car1" src="./img/car1.png">
+		</a>
+		<a href="#section-agerange">
+			<img class="car2" src="./img/car2.png">
+		</a>
+		<a href="#section-lineup">
+			<img class="car3" src="./img/car3.png">
+		</a>
+		<a href="#section-detail">
+			<img class="car4" src="./img/car4.png">
+		</a>
+		<a href="#section-global">
+			<img class="car5" src="./img/car5.png">
+		</a>
+		<a href="#section-adition">
+			<img class="car6" src="./img/car6.png">
+		</a>
+		<a href="#section-pride">
+			<img class="car7" src="./img/car7.png">
+		</a>
+		<a href="#section-size">
+			<img class="car8" src="./img/car8.png">
+		</a>
+		<p class="p-header-style size"> SIZE </p>
+		<p class="p-header-style agerange">AGE RANGE</p>
+		<p class="p-header-style detail">DETAIL</p>
+		<p class="p-header-style lineup">LINE UP</p>
+		<p class="p-header-style pride">PRIDE</p>
+		<p class="p-header-style year">1970</p>
+		<p class="p-header-style global">GLOBAL</p>
+		<p class="p-header-style adition">ADITION</p>
+	</header>
+
+	<section>	
+		<div class="artboard">
+			<img src="./img/car1.png" style="width: 130px; padding-top: 800px" id="sec-car-1970" class="section-car">
+			<h2 id="section-1970">1970</h2>
+			<p style="margin-top: 0">토미카의 시작</p>
+			<p class="quote1">"일본 아이들에게 일본 자동차를!"</p>
+			<p style="margin-bottom: 200px;">토미카가 탄생한 건 <span class="white-text">1970년</span>이었습니다. "일본 아이들에게 일본 자동차를!"이라는 캐치프레이즈로 <br>시작된 이 프로젝트는 당시 해외 브랜드들이 장악하고 있던
+			미니카 시장에 도전장을 내밀었죠. <br>토미의 창업자가 직접 발로 뛰며 닛산, 토요타, 혼다를 찾아가 계약을 성사시켰고, <br>그렇게 <span class="white-text">일본 브랜드 미니카의 시대</span>가 열렸습니다. </p>
+		<section style="padding: 0;">	
+		    <div class="artboard">
+		        <p class="white-text">First Line up</p>
+			        <div class="slider-container" id="slider-container" style="margin-bottom: 0;">       
+			            <div class="slide-wrapper" id="slide-wrapper">
+		                <img class="slide-image" src="./img/silvia1.png" alt="Lineup Car 1">
+		                <img class="slide-image" src="./img/superd1.png" alt="Lineup Car 2">
+		                <img class="slide-image" src="./img/z4321.png" alt="Lineup Car 3">
+		                <img class="slide-image" src="./img/bluebird1.png" alt="Lineup Car 4">
+		                <img class="slide-image" src="./img/bellett1.png" alt="Lineup Car 5">
+		                <img class="slide-image" src="./img/bb1.png" alt="Lineup Car 6">
+		            	</div>
+		            </div>
+		        <img src="./img/dio6.png" class="dio6">
+        	 </div>
+		</section>
+			<p style="font-size: 1.3rem; color: #EB1C24;">slide!</p>
+			<p style="margin-top: 100px;">첫 라인업은 총 6종이었습니다.</p>
+			<p>닛산 실비아<br>토요타 크라운 슈퍼 디럭스<br>닛산 페어레이디 Z432<br>닛산 블루버드 1600SSS<br>이스즈 벨렛 1600GT<br>토요타 코로나 마크II</p>
+			<p>출시 첫 해에만 <span class="white-text">380만대</span>가 팔리며<br>일본 미니카 시장에 대혁명을 일으켰습니다.</p>
+		</div>
+	</section>
+
+	<section>
+		<div class="artboard">
+			<img src="./img/car8.png" style="width: 130px;padding-top: 800px;" id="sec-car-size" class="section-car">
+			<h2 id="section-size" >SIZE</h2>
+			<p style="margin-top: 0">1/64 스케일</p>
+			<p class="quote1">“실차 그대로 64배 축소한 정밀도”</p>
+			<p>토미카의 정밀도는 광기 수준입니다.<br>"실제 차량을 그대로 64배 축소한다"는 철학 아래 제작되는 이 미니카들은 <br><span class="white-text">세 단계의 긴 과정</span>을 거칩니다.</p>
+			
+			<p class="quote">1단계 - 실차 측정 (2~3개월)</p>
+				<div class="image-overlay-wrapper">
+    			<img class="w100" src="./img/size1.png" alt="실차 측정 이미지">
+    				<div class="overlay-content">
+        			<p class="overlay-text"> 실제 차량 3D 스캔, 수천 곳 치수 측정, 제조사 공식 계약.</p>
+    				</div>
+				</div>
+			<p class="quote">2단계 — 설계 (3~4개월)</p>
+				<div class="image-overlay-wrapper">
+    			<img class="w100" src="./img/size2.png" alt="2단계 설계 이미지">
+    				<div class="overlay-content">
+        			<p class="overlay-text"><span class="white-text">0.1mm</span> 단위 정밀 모델링, 개폐 구조 설계.</p>
+    				</div>
+				</div>
+			<p class="quote">3단계 — 금형 제작 (4~6개월)</p>
+				<div class="image-overlay-wrapper">
+    			<img class="w100" src="./img/size3.png" alt="3단계 금형 제작 이미지">
+   					<div class="overlay-content">
+       				<p class="overlay-text">모델 하나에 <span class="white-text">15~20개</span> 금형. <br>금형 가격: 수천만 원.수명: 50만~100만회. <br><br><span class="white-text">정밀 디테일 예시</span><br>헤드라이트 0.8mm<br>도어 손잡이 0.3mm<br>
+            		계기판 인쇄 0.5mm<br>실제 패턴의 타이어 트레드<br>머플러 위치까지 실차와 동일 .</p>
+    				</div>
+				</div>
+		</div>	
+	</section>
+
+	<section class="secart">
+		<div class="artboard">
+			<img src="./img/car4.png" style="width:130px;padding-top: 200px;" id="sec-car-detail" class="section-car">
+			<h2 id="section-detail">DETAIL</h2>
+			<p style="margin-top: 0">보이지 않는 곳까지 완벽하게</p>
+			<p class="quote">외관 디테일</p>
+			<p>실차 컬러 매칭 & 3~4겹 도색</p>
+			<p>차체 라인과 형태</p>
+			<p>실제 폰트 번호판</p>
+			<p>하부구조</p>
+			<p>0.5mm 테일램프</p>
+			<br><p style="margin-top: 100px" class="quote">내부 디테일(프리미엄 라인)</p>
+			<p>대시보드, 스티어링 휠, 시트 텍스처, 기어 레버, 엔진룸까지 재현됩니다.</p>
+			<img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExamE5M3JjNnRybm96eGh6NHZ4cWIybnp6ZGlocjB5OG40NG5mcGJvbSZlcD12MV9zdGlja2Vyc19zZWFyY2gmY3Q9cw/elxprhRgkbdK/giphy.gif" style="width: 300px; padding-top: 100px;padding-left: 60px; "  >
+			<P style="text-align: right; margin-bottom: 200px;">토미카의 상징이라고 할 수 있는 건 바로 <span class="white-text">서스펜션</span>입니다. <br>바퀴가 독립적으로 움직이고 울퉁불퉁한 표면에서도 4바퀴가 모두 접지되는 구조로 설계되어 있습니다. 게다가 <span class="white-text">도어, 본넷, 트렁크</span>가 개폐되고, 일부 모델은 루프 탈착까지 가능합니다.</P>
+		</div>
+	</section>
+
+	<section>
+		<div class="artboard">
+			<img src="./img/car3.png" style="width:130px; padding-top: 800px;" id="sec-car-lineup" class="section-car">
+			<h2 id="section-lineup">LINE UP</h2>
+			<p style="margin-top: 0">50년 라인업의 역사</p>
+			<p style="margin-top:150px;">토미카는 50년 동안 누적 <span class="white-text">1,200종</span> 이상을 출시하며 상징적인 미니카 브랜드로 자리잡았습니다.</p>
+			<p class="quote">국산차 라인</p>
+			<p style="margin-bottom: 50px;">스바루, 닛산, 토요타, 혼다...</p>
+			<img src="./img/subaru.png" style="width: 300px;">
+			<img src="./img/nissan.png" style="width: 300px;">
+			<img src="./img/toyota.png" style="width: 300px;">
+			<img src="./img/honda.png" style="width: 300px;">
+			<br><p class="quote">외제차 라인</p>
+			<p>페라리, 람보르기니, 포르쉐, 벤츠…</p>
+			<p style="margin-bottom:50px;">이외에도 <span class="white-text">특수 차량</span>으로는 경찰차, 소방차, 버스, 중장비, 택배 트럭까지 다양하고, 레이싱 팀, 영화, <br>기업 트럭과의 <span class="white-text">콜라보 작품</span>도 있습니다. 한정판과 단종 모델의 경우, 프리미엄 초판 미개봉 제품은 정가의 5~20배까지 가격이 상승하기도 합니다.
+			</p>
+			<section class="bf"></section>
+		</div>
+	</section>
+		
+		
+
+	<section>
+		<div class="artboard">
+			<img src="./img/car7.png" style="width:130px; padding-top: 800px;" id="sec-car-pride" class="section-car">
+			<h2 id="section-pride">PRIDE</h2>
+			<p style="margin-top: 0">메이드 인 재팬의 자부심</p>
+			<P style="margin-top: 100px;">토미카의 생산은 여러 국가에서 이루어지지만, 핵심 공정인 금형, 디자인, 품질관리는 <br><span class="white-text">100% 일본</span>에서 진행됩니다.</P>
+			<p>품질 기준은 정말 엄격합니다. 도색 불량률은 0.1% 이하, 조립 불량은 0.05% 이하로 관리되고, <br>바퀴 회전 테스트는 1만회, 낙하 테스트는 1m 높이에서 100회, <br>자외선 내구성 테스트는 500시간 동안 진행됩니다.</p>
+			<p style="margin-top: 50px;">토미카의 철학은 명확합니다.</p>
+			<p class="quote1">"싸게 만들 수 있다. 하지만 우리는 만들지 않는다."</p>
+		</div>
+	</section>
+
+	<section>
+		<div class="artboard">
+			<img src="./img/car2.png" style="width: 130px; padding-top: 800px;" id="sec-car-agerange" class="section-car">
+			<h2 id="section-agerange">AGE RANGE</h2>
+			<p style="margin-top: 0">어른들이 더 산다?</p>
+			<p style="margin-top: 100px; margin-bottom: 200px;">토미카 컬렉터의 연령층을 보면 성인이 90%를 차지합니다.<br>어른들이 토미카를 모으는 이유는 </p>
+				<p class="quote">향수</p>
+				<P class="m10">어린 시절 기억, 아버지의 차, 첫차</P>
+				<p class="quote m100">실차 대리 만족</p>
+				<p class="m10">5억짜리 페라리 → 5천원</p>
+				<p class="quote m100">진입 비용 저렴</p>
+				<P class="m10">4천원~4만원</P>
+				<p class="quote m100">공간 절약</p>
+				<P class="m10">100대도 신발장 한 칸</P>
+				<p class="quote m100">디오라마 제작 인기</p>
+				<br><p class="quote m100">투자 가치</p>
+				<p class="m10">단종 모델은 10~30배까지 상승</p>
+				<img src="./img/stwarn.png" class="stwarn shake">
+				<img src="./img/sttruck.png" class="sttruck shake">
+				<img src="./img/stcorn1.png" class="stcorn shake">
+				<img src="./img/stmotor.png" class="stmotor shake">
+				<img src="./img/stpork.png" class="stpork shake">
+				<img src="./img/stcorn.png" class="stcorn2 shake">
+				<img src="./img/stam.png" class="stam shake">
+				<img src="./img/stguide.png" class="stguide shake">
+			</div>
+	</section>
+
+	<section>
+		<div class="artboard">
+			<img src="./img/car5.png" style="width: 130px; padding-top: 800px;" id="sec-car-global" class="section-car">
+			<h2 id="section-global">GLOBAL</h2>
+			<p style="margin-top: 0">글로벌 시장의 토미카</p>
+			<P style=" margin-top: 200px;">토미카는 국가별로 인기 모델이 다릅니다.</P>
+			<p><span class="white-text">일본</span>에서는 국산차, 경차, 특수차량이 인기고,<br><span class="white-text">한국</span>에서는 슈퍼카, 현대·기아 차량, 애니메이션 콜라보 제품이 잘 팔립니다. <br><span class="white-text">미국</span>에서는 머스탱, 쉐보레, 픽업트럭이,<br><span class="white-text">유럽</span>에서는 BMW, 벤츠, 클래식카, 프리미엄 라인이 사랑받고 있습니다.
+			<p class="m100" style="margin-bottom: 200px">판매 규모도 어마어마합니다. 전세계적으로 연간 4천만대가 팔리는데, <span class="white-text"><br>"매초 1.3대씩 팔리는 미니카"</span>라는 별명이 붙을 정도죠. <br>2020년에는 누적 판매량 <span class="white-text">10억대</span>를 돌파했습니다.</p>
+			<section class="gif"></section>
+		</div>
+	</section>
+	
+
+	<section class="secart">
+		<div class="artboard">
+			<img src="./img/car6.png" style="width:130px; padding-top: 200px;" id="sec-car-adition" class="section-car">
+			<h2 id="section-adition">ADITION</h2>
+			<p style="margin-top: 0">컬렉터들이 사랑하는 특별판</p>
+			
+			<img src="./img/first.png" class="p300">
+			<br><p class="quote m10">초회 한정 컬러</p>
+			<p>첫 생산분만 색 다름 → 가치 3~5배</p>
+			<img src="./img/blackbox.png" >
+			<br><p class="quote m10">블랙박스 시리즈</p>
+			<p> 1988~2000년 고급 라인<br>현재 프리미엄 최고가</p>
+			<img src="./img/event.png" >
+			<br><p class="quote m10">이벤트 한정판</p>
+			<p>모터쇼, 박물관, 기념 행사판</p>
+			<img src="./img/disney.png" >
+			<br><p class="quote m10">디즈니 에디션</p>
+			<p style="margin-bottom:200px;">미키 컬러·캐릭터 데칼<br>프리미엄 언리미티드<br>정밀도 강화, 메탈 파츠 증가, 실감 표현 극대화</p>
+		</div>
+	</section>
+
+	<section>
+		<h2 style="font-size: 2rem; line-height: 2.2; margin-top: 800px;">ABOUT</h2>
+		<a href="#section-main">
+			<img src="./img/tomicalogo.png" style="width:350px; margin-bottom: 200px;" >
+		</a>
+	<footer class="main-footer">
+    <p class="footer-text">TOMY ASIA LIMITED<br>
+        Nos.809B-12 & 15, 8th Floor, Exchange Tower,<br>
+        No.33 Wang Chiu Road, Kowloon Bay, Hong Kong</p>
+   	 <hr class="footer-divider"> 
+    <p class="footer-design">
+        @Copyright © Go DoYeon . All rights reserved.<br> yeondo0826@gmail.com</p>
+	</footer>
+
+<script>
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.slide-image');
+    const totalSlides = slides.length;
+    const wrapper = document.getElementById('slide-wrapper');
+    const slideWidth = 500;
+    const container = document.getElementById('slider-container');   
+    let isDragging = false;
+    let startPos = 0; 
+    let currentTranslate = 0; 
+    let prevTranslate = 0; 
+    function setPositionByIndex() {
+        currentTranslate = currentSlide * -slideWidth; 
+        wrapper.style.transform = `translateX(${currentTranslate}px)`;}
+    function dragStart(event) {
+        event.preventDefault(); 
+        isDragging = true;
+        startPos = event.type.includes('mouse') ? event.clientX : event.touches[0].clientX;
+         prevTranslate = currentTranslate;
+        container.style.cursor = 'grabbing';}    
+    function dragging(event) {
+        if (!isDragging) return;        
+        const currentPos = event.type.includes('mouse') ? event.clientX : event.touches[0].clientX;
+        const diff = currentPos - startPos;        
+        currentTranslate = prevTranslate + diff;
+        wrapper.style.transform = `translateX(${currentTranslate}px)`;}
+    function dragEnd() {
+        if (!isDragging) return;
+        isDragging = false;
+        container.style.cursor = 'grab';        
+        const movedBy = currentTranslate - prevTranslate;  
+        if (movedBy < -slideWidth / 4 && currentSlide < totalSlides - 1) {
+            currentSlide++;} else if (movedBy > slideWidth / 4 && currentSlide > 0) {
+            urrentSlide--;}            
+        setPositionByIndex();}  
+    container.addEventListener('mousedown', dragStart);
+    window.addEventListener('mouseup', dragEnd);
+    window.addEventListener('mousemove', dragging);
+    container.addEventListener('touchstart', dragStart);
+    window.addEventListener('touchend', dragEnd);
+    window.addEventListener('touchmove', dragging);
+    window.onload = setPositionByIndex; 
+    document.addEventListener('DOMContentLoaded', () => {
+    
+        const animationTargets = [
+            ['section-1970', 'sec-car-1970'],
+            ['section-size', 'sec-car-size'],
+            ['section-detail', 'sec-car-detail'],
+            ['section-lineup', 'sec-car-lineup'],
+            ['section-pride', 'sec-car-pride'],
+            ['section-agerange', 'sec-car-agerange'],
+            ['section-global', 'sec-car-global'],
+            ['section-adition', 'sec-car-adition'],];
+	const observerOptions = {
+            root: null, 
+            rootMargin: '0px',
+            threshold: 0.2 };
+        const carObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const targetId = entry.target.id;
+                    const mapping = animationTargets.find(m => m[0] === targetId);
+                    if (mapping) {
+                        const imageId = mapping[1];
+                        const imageToAnimate = document.getElementById(imageId);
+                        if (imageToAnimate) {imageToAnimate.classList.add('animate-in');}}
+                    observer.unobserve(entry.target); }});}, observerOptions);
+        animationTargets.forEach(mapping => {const section = document.getElementById(mapping[0]);
+            if (section) {carObserver.observe(section);}});});
+</script>
+
+</body>
+</html>
